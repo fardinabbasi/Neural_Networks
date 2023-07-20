@@ -68,4 +68,4 @@ cnn.summary()
 | --- | --- | --- | --- |
 | SGD | <img src="/readme_images/sgd_t.png"> | <img src="/readme_images/sgd_v.png"> | <img src="/readme_images/sgd_r.jpg"> |
 | Adam | <img src="/readme_images/adam_t.png"> | <img src="/readme_images/adam_v.png"> | <img src="/readme_images/adam_r.jpg"> |
-| RMSprop | <img src="/readme_images/rms_t.png"> | <img src="/readme_images/rms_v.png"> | <img src="/readme_images/rms_r.jpg"> |
+| RMSprop | <img src="/readme_images/rsm_t.png"> | <img src="/readme_images/rms_v.png"> | <img src="/readme_images/rms_r.jpg"> |
