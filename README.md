@@ -26,4 +26,5 @@ The model was fed with two different types of features: **normalized** features 
 | --- | --- | --- |
 | Unnormalized | <img src="/readme_images/mlp_wo_r.jpg"> | <img src="/readme_images/mlp_wo_c.png"> |
 | Normalized | <img src="/readme_images/mlp_w_r.jpg"> | <img src="/readme_images/mlp_w_c.png"> |
-It is clear from the results that normalizing has quite an impressive impact on model performance. Normalization is a crucial preprocessing step because a feature with a higher range can outweigh a feature with a lower range. [Read More](https://sathish-manthani.medium.com/data-normalization-and-standardization-7ce8cb6472ae)
+
+It is clear from the results that normalizing has quite an impressive impact on model performance. Normalization is a crucial preprocessing step because a feature with a higher range can **outweigh** a feature with a lower range. [Read More](https://sathish-manthani.medium.com/data-normalization-and-standardization-7ce8cb6472ae)
