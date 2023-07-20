@@ -59,6 +59,7 @@ Y_test = to_categorical(Y_test)
 x_train, x_valid, y_train, y_valid = train_test_split(X_train, Y_train, test_size=0.8, random_state=42)
 ```
 ### CNN Architecture
+Here is the architecture of the CNN (Convolutional Neural Networks) classifier:
 ```ruby
 from tensorflow import keras
 ```
@@ -84,6 +85,7 @@ cnn = keras.Sequential(
 
 cnn.summary()
 ```
+### Comparing Performance with Different Optimizers
 | Optimizer | Training Loss & Precision | Validation Loss & Precision | Classification Report |
 | --- | --- | --- | --- |
 | SGD | <img src="/readme_images/sgd_t.png"> | <img src="/readme_images/sgd_v.png"> | <img src="/readme_images/sgd_r.jpg"> |
