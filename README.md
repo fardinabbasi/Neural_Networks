@@ -86,6 +86,7 @@ cnn = keras.Sequential(
 cnn.summary()
 ```
 ### Comparing Performance with Different Optimizers
+Here are the model results obtained using three different optimizers, namely [SGD](https://keras.io/api/optimizers/sgd/), [Adam](https://keras.io/api/optimizers/adam/), and [RMSprop](https://keras.io/api/optimizers/rmsprop/).
 | Optimizer | Training Loss & Precision | Validation Loss & Precision | Classification Report |
 | --- | --- | --- | --- |
 | SGD | <img src="/readme_images/sgd_t.png"> | <img src="/readme_images/sgd_v.png"> | <img src="/readme_images/sgd_r.jpg"> |
