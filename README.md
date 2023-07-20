@@ -37,3 +37,35 @@ To handle the imbalanced distribution of classes, the class ~, which has the low
 
 The results indicate a slight improvement in model performance.
 # [Convolutional Neural Networks](https://github.com/fardinabbasi/Neural_Networks/tree/CNN)
+### Data Exploration
+| Sample 1 | Sample 2 | Sample 3 | Sample 4 | Sample 5 |
+| --- | --- | --- | --- | --- |
+| <img src="/readme_images/s1.png"> | <img src="/readme_images/s2.png"> | <img src="/readme_images/s3.png"> | <img src="/readme_images/s4.png"> | <img src="/readme_images/s5.png"> |
+
+```ruby
+cnn = keras.Sequential(
+    [
+        layers.Conv2D(32, (3, 3), activation="relu",  input_shape=x_train.shape[1:]),
+        layers.Conv2D(32, (3, 3), activation="relu"),
+        layers.Conv2D(32, (3, 3), activation="relu"),
+        layers.MaxPooling2D((2, 2)),
+        layers.Dropout(0.25),
+        layers.Conv2D(64, (3, 3), activation="relu"),
+        layers.Conv2D(64, (3, 3), activation="relu"),
+        layers.Conv2D(64, (3, 3), activation="relu"),
+        layers.MaxPooling2D((2, 2)),
+        layers.Dropout(0.25),
+        layers.Flatten(),
+        layers.Dense(512, activation="relu"),
+        layers.Dropout(0.5),
+        layers.Dense(10, activation="softmax"),
+    ]
+)
+
+cnn.summary()
+```
+| Optimizer | Training Loss & Precision | Validation Loss & Precision | Classification Report |
+| --- | --- | --- | --- |
+| SGD | <img src="/readme_images/sgd_t.png"> | <img src="/readme_images/sgd_v.png"> | <img src="/readme_images/sgd_r.jpg"> |
+| Adam | <img src="/readme_images/adam_t.png"> | <img src="/readme_images/adam_v.png"> | <img src="/readme_images/adam_r.jpg"> |
+| RMSprop | <img src="/readme_images/rms_t.png"> | <img src="/readme_images/rms_v.png"> | <img src="/readme_images/rms_r.jpg"> |
