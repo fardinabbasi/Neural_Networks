@@ -14,9 +14,10 @@ The class distribution of the samples is as follows: N (Normal) - 5992 samples, 
 <img src="/readme_images/mlp_exploration.png">
 
 Indeed, the class distribution appears to be **highly imbalanced**.
-
-The dataset has been divided into a **training set** and a **test set**.
-
+### Preprocessing
+The dataset has been divided into a **training set** and a **test set**. 
+Additionally, the features have been normalized using **StandardScaler**.
+### MLP Architecture
 Here is the architecture of the MLP (Multi-Layer Perceptron) classifier:
 ```ruby
 clf = MLPClassifier(hidden_layer_sizes=(128,64,32,16), activation='relu', solver='sgd', max_iter=1000, random_state=42)
@@ -37,10 +38,27 @@ To handle the imbalanced distribution of classes, the class ~, which has the low
 
 The results indicate a slight improvement in model performance.
 # [Convolutional Neural Networks](https://github.com/fardinabbasi/Neural_Networks/tree/CNN)
+Performing a CNN model on the [CIFAR-10](https://keras.io/api/datasets/cifar10/) image dataset, which consists of 10 classes and a total of 60,000 images.
 ### Data Exploration
+Here are 5 random images from the CIFAR-10 image dataset.
 | Sample 1 | Sample 2 | Sample 3 | Sample 4 | Sample 5 |
 | --- | --- | --- | --- | --- |
 | <img src="/readme_images/s1.png"> | <img src="/readme_images/s2.png"> | <img src="/readme_images/s3.png"> | <img src="/readme_images/s4.png"> | <img src="/readme_images/s5.png"> |
+### Preprocessing
+The dataset has been split into a **training set** and a **test set**. 
+Furthermore, the labels have been one-hot encoded using the following code snippet.
+```ruby
+from tensorflow.keras.utils import to_categorical
+```
+```ruby
+X_train = X_train.astype("float32") / 255.0
+X_test = X_test.astype("float32") / 255.0
+Y_train = to_categorical(Y_train)
+Y_test = to_categorical(Y_test)
+
+x_train, x_valid, y_train, y_valid = train_test_split(X_train, Y_train, test_size=0.8, random_state=42)
+```
+### CNN Architecture
 ```ruby
 from tensorflow import keras
 ```
