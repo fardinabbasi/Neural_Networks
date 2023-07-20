@@ -41,7 +41,9 @@ The results indicate a slight improvement in model performance.
 | Sample 1 | Sample 2 | Sample 3 | Sample 4 | Sample 5 |
 | --- | --- | --- | --- | --- |
 | <img src="/readme_images/s1.png"> | <img src="/readme_images/s2.png"> | <img src="/readme_images/s3.png"> | <img src="/readme_images/s4.png"> | <img src="/readme_images/s5.png"> |
-
+```ruby
+from tensorflow import keras
+```
 ```ruby
 cnn = keras.Sequential(
     [
