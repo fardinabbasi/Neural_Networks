@@ -93,7 +93,9 @@ Here are the model results obtained using three different optimizers, namely [SG
 | Adam | <img src="/readme_images/adam_t.png"> | <img src="/readme_images/adam_v.png"> | <img src="/readme_images/adam_r.jpg"> |
 | RMSprop | <img src="/readme_images/rsm_t.png"> | <img src="/readme_images/rms_v.png"> | <img src="/readme_images/rms_r.jpg"> |
 
-The above results demonstrate the importance of choosing an optimizer wisely. Now, let's provide a brief explanation of the application of each optimizer:
-1- SGD is generally suitable for shallow networks or when memory resources are limited. However, it may struggle with saddle points and flat regions in the loss landscape.
-2- Adam is widely used and generally recommended as a good default optimizer for most neural network architectures. It often provides faster convergence and better performance than SGD.
-3-  RMSprop is less sensitive to the learning rate hyperparameter compared to SGD, making it more suitable for various tasks and network architectures.
+The above results demonstrate the importance of choosing an optimizer wisely.
+Now, let's provide a brief explanation of the application of each optimizer:
+
+1. **SGD** is generally suitable for **shallow networks** or when **memory resources** are limited. However, it may struggle with **saddle points** and **flat regions** in the loss landscape.
+2. **Adam** is widely used and **generally recommended** as a good default optimizer for most neural network architectures. It often provides **faster convergence** and **better performance** than SGD.
+3.  **RMSprop** is **less sensitive** to the **learning rate** hyperparameter compared to SGD, making it more suitable for various tasks and network architectures.
