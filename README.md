@@ -1,11 +1,5 @@
 # Neural Networks
-> <picture>
->   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
->   <img alt="Info" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/info.svg">
-> </picture><br>
->
-> Check the branches!
-# [Multi Layer Perceptron](https://github.com/fardinabbasi/Neural_Networks/tree/MLP)
+## Multi Layer Perceptron
 **ECG signals** are classified into four classes: N for Normal, A for Atrial fibrillation, O for Others, and ~ for cases affected by unknown noise. 
 The dataset used for classification is "[ECG.csv](https://github.com/fardinabbasi/Neural_Networks/blob/MLP/ECG.csv)" which contains 169 features.
 ### Data Exploration
@@ -37,7 +31,7 @@ To handle the imbalanced distribution of classes, the class ~, which has the low
 | <img src="/readme_images/mlp_m_r.jpg"> | <img src="/readme_images/mlp_m_c.png"> |
 
 The results indicate a slight improvement in model performance.
-# [Convolutional Neural Networks](https://github.com/fardinabbasi/Neural_Networks/tree/CNN)
+## Convolutional Neural Networks
 Performing a CNN model on the [CIFAR-10](https://keras.io/api/datasets/cifar10/) image dataset, which consists of 10 classes and a total of 60,000 images.
 ### Data Exploration
 Here are 5 random images from the CIFAR-10 image dataset.
